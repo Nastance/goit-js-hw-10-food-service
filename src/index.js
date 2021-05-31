@@ -19,6 +19,8 @@ const themeChangerRef = document.querySelector('#theme-switch-toggle');
 // console.log(themeChangerRef);
 themeChangerRef.addEventListener('change', changeThemeHandler);
 
+chackThemeHandler();
+
 function changeThemeHandler(event) {
     bodyRef.classList.toggle(Theme.LIGHT);
     bodyRef.classList.toggle(Theme.DARK);
@@ -37,11 +39,10 @@ function chackThemeHandler() {
 
     if (savedTheme === Theme.DARK) {
         bodyRef.classList.add(Theme.DARK);
-        themeChangerRef.chacked = true;
+        themeChangerRef.checked = true;
     } else {
         bodyRef.classList.add(Theme.LIGHT);
-        themeChangerRef.chacked = false;
     }
 }
 
-chackThemeHandler();
+
