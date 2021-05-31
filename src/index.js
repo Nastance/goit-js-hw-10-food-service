@@ -40,6 +40,7 @@ function chackThemeHandler() {
         themeChangerRef.chacked = true;
     } else {
         bodyRef.classList.add(Theme.LIGHT);
+        themeChangerRef.chacked = false;
     }
 }
 
